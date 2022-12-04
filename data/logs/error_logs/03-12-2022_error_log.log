@@ -1,0 +1,28 @@
+[Sat, 03 Dec 2022 15:06:00 +0700] [localhost] [172.18.0.1] [Warning(2): fsockopen(): unable to connect to localhost:1000 (Cannot assign requested address)] [FILE: /includes/functions.php] [LINE: 2970] [TRACE:]
+#1  LINE: 17    FILE: /admin/index.php
+#2  LINE: 149   FILE: /includes/mainfile.php
+#3  LINE: 2970  FILE: /includes/functions.php
+
+[Sat, 03 Dec 2022 15:06:00 +0700] [localhost] [172.18.0.1] [Warning(2): fwrite() expects parameter 1 to be resource, bool given] [FILE: /includes/functions.php] [LINE: 3003] [TRACE:]
+#1  LINE: 17    FILE: /admin/index.php
+#2  LINE: 149   FILE: /includes/mainfile.php
+#3  LINE: 3003  FILE: /includes/functions.php
+
+[Sat, 03 Dec 2022 15:06:00 +0700] [localhost] [172.18.0.1] [Warning(2): fclose() expects parameter 1 to be resource, bool given] [FILE: /includes/functions.php] [LINE: 3008] [TRACE:]
+#1  LINE: 17    FILE: /admin/index.php
+#2  LINE: 149   FILE: /includes/mainfile.php
+#3  LINE: 3008  FILE: /includes/functions.php
+
+[Sat, 03 Dec 2022 17:10:03 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined index: uid] [FILE: /modules/register/admin/authors.php] [LINE: 245] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Sat, 03 Dec 2022 17:10:58 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in /var/www/html/vendor/vinades/nukeviet/Core/Database.php:529
+Stack trace:
+#0 /var/www/html/vendor/vinades/nukeviet/Core/Database.php(529): PDO->query('SELECT userid, ...')
+#1 /var/www/html/modules/register/admin/authors.php(255): NukeViet\Core\Database->query('SELECT userid, ...')
+#2 /var/www/html/admin/index.php(182): require('/var/www/html/m...')
+#3 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 529]
+[Sat, 03 Dec 2022 18:20:29 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: mod_data] [FILE: /modules/register/admin/get_department.php] [LINE: 3] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
