@@ -1,0 +1,112 @@
+[Mon, 05 Dec 2022 11:21:47 +0700] [localhost] [172.18.0.1] [Warning(2): fsockopen(): unable to connect to localhost:1000 (Cannot assign requested address)] [FILE: /includes/functions.php] [LINE: 2970] [TRACE:]
+#1  LINE: 26    FILE: /index.php
+#2  LINE: 149   FILE: /includes/mainfile.php
+#3  LINE: 2970  FILE: /includes/functions.php
+
+[Mon, 05 Dec 2022 11:21:47 +0700] [localhost] [172.18.0.1] [Warning(2): fwrite() expects parameter 1 to be resource, bool given] [FILE: /includes/functions.php] [LINE: 3003] [TRACE:]
+#1  LINE: 26    FILE: /index.php
+#2  LINE: 149   FILE: /includes/mainfile.php
+#3  LINE: 3003  FILE: /includes/functions.php
+
+[Mon, 05 Dec 2022 11:21:47 +0700] [localhost] [172.18.0.1] [Warning(2): fclose() expects parameter 1 to be resource, bool given] [FILE: /includes/functions.php] [LINE: 3008] [TRACE:]
+#1  LINE: 26    FILE: /index.php
+#2  LINE: 149   FILE: /includes/mainfile.php
+#3  LINE: 3008  FILE: /includes/functions.php
+
+[Mon, 05 Dec 2022 12:34:29 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught Error: Call to undefined function issset() in /var/www/html/modules/register/admin/users.php:138
+Stack trace:
+#0 /var/www/html/admin/index.php(182): require()
+#1 {main}
+  thrown] [FILE: /modules/register/admin/users.php] [LINE: 138]
+[Mon, 05 Dec 2022 12:56:32 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught Error: Call to undefined function var_dum() in /var/www/html/modules/register/admin/users.php:238
+Stack trace:
+#0 /var/www/html/admin/index.php(182): require()
+#1 {main}
+  thrown] [FILE: /modules/register/admin/users.php] [LINE: 238]
+[Mon, 05 Dec 2022 13:49:15 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined index: uid] [FILE: /modules/register/admin/users.php] [LINE: 284] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+
+[Mon, 05 Dec 2022 13:52:27 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: module_data] [FILE: /modules/register/admin/users.php] [LINE: 291] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 287   FILE: /modules/register/admin/users.php
+
+[Mon, 05 Dec 2022 13:52:27 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: db] [FILE: /modules/register/admin/users.php] [LINE: 292] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 287   FILE: /modules/register/admin/users.php
+
+[Mon, 05 Dec 2022 13:52:27 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught Error: Call to a member function prepare() on null in /var/www/html/modules/register/admin/users.php:292
+Stack trace:
+#0 /var/www/html/modules/register/admin/users.php(287): deleteUser('1')
+#1 /var/www/html/admin/index.php(182): require('/var/www/html/m...')
+#2 {main}
+  thrown] [FILE: /modules/register/admin/users.php] [LINE: 292]
+[Mon, 05 Dec 2022 13:55:33 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: db] [FILE: /modules/register/admin/users.php] [LINE: 293] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 287   FILE: /modules/register/admin/users.php
+
+[Mon, 05 Dec 2022 13:55:33 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught Error: Call to a member function exec() on null in /var/www/html/modules/register/admin/users.php:293
+Stack trace:
+#0 /var/www/html/modules/register/admin/users.php(287): deleteUser('1')
+#1 /var/www/html/admin/index.php(182): require('/var/www/html/m...')
+#2 {main}
+  thrown] [FILE: /modules/register/admin/users.php] [LINE: 293]
+[Mon, 05 Dec 2022 13:55:51 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: db] [FILE: /modules/register/admin/users.php] [LINE: 294] [TRACE:]
+#1  LINE: 182   FILE: /admin/index.php
+#2  LINE: 287   FILE: /modules/register/admin/users.php
+
+[Mon, 05 Dec 2022 13:55:51 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught Error: Call to a member function exec() on null in /var/www/html/modules/register/admin/users.php:294
+Stack trace:
+#0 /var/www/html/modules/register/admin/users.php(287): deleteUser('1')
+#1 /var/www/html/admin/index.php(182): require('/var/www/html/m...')
+#2 {main}
+  thrown] [FILE: /modules/register/admin/users.php] [LINE: 294]
+[Mon, 05 Dec 2022 14:01:25 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nukeviet.nv4_vi__users' doesn't exist in /var/www/html/vendor/vinades/nukeviet/Core/Database.php:529
+Stack trace:
+#0 /var/www/html/vendor/vinades/nukeviet/Core/Database.php(529): PDO->query('Delete FROM nv4...')
+#1 /var/www/html/modules/register/admin/users.php(292): NukeViet\Core\Database->query('Delete FROM nv4...')
+#2 /var/www/html/modules/register/admin/users.php(287): deleteUser('1', Object(NukeViet\Core\Database))
+#3 /var/www/html/admin/index.php(182): require('/var/www/html/m...')
+#4 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 529]
+[Mon, 05 Dec 2022 15:28:51 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: page] [FILE: /modules/register/funcs/main.php] [LINE: 26] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+
+[Mon, 05 Dec 2022 15:28:51 +0700] [localhost] [172.18.0.1] [Warning(2): Invalid argument supplied for foreach()] [FILE: /modules/register/funcs/main.php] [LINE: 128] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+
+[Mon, 05 Dec 2022 15:28:51 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: page] [FILE: /modules/register/funcs/main.php] [LINE: 357] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+
+[Mon, 05 Dec 2022 15:58:31 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: db_slave] [FILE: /modules/register/theme.php] [LINE: 15] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+#2  LINE: 12    FILE: /modules/register/funcs/main.php
+
+[Mon, 05 Dec 2022 15:58:31 +0700] [localhost] [172.18.0.1] [Error(1): Uncaught Error: Call to a member function sqlreset() on null in /var/www/html/modules/register/theme.php:15
+Stack trace:
+#0 /var/www/html/modules/register/funcs/main.php(12): get_schedule()
+#1 /var/www/html/index.php(364): require('/var/www/html/m...')
+#2 {main}
+  thrown] [FILE: /modules/register/theme.php] [LINE: 15]
+[Mon, 05 Dec 2022 15:58:43 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: module_data] [FILE: /modules/register/theme.php] [LINE: 17] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+#2  LINE: 12    FILE: /modules/register/funcs/main.php
+
+[Mon, 05 Dec 2022 16:38:18 +0700] [localhost] [172.18.0.1] [Warning(2): Cannot modify header information - headers already sent by (output started at /var/www/html/modules/register/theme.php:62)] [FILE: /includes/footer.php] [LINE: 97] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+#2  LINE: 16    FILE: /modules/register/funcs/main.php
+#3  LINE: 97    FILE: /includes/footer.php
+
+[Mon, 05 Dec 2022 16:47:53 +0700] [localhost] [172.18.0.1] [Warning(2): date() expects parameter 2 to be int, string given] [FILE: /modules/register/theme.php] [LINE: 35] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+#2  LINE: 13    FILE: /modules/register/funcs/main.php
+#3  LINE: 35    FILE: /modules/register/theme.php
+
+[Mon, 05 Dec 2022 16:47:53 +0700] [localhost] [172.18.0.1] [Notice(8): Undefined variable: weeks] [FILE: /modules/register/theme.php] [LINE: 49] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+#2  LINE: 13    FILE: /modules/register/funcs/main.php
+
+[Mon, 05 Dec 2022 16:49:43 +0700] [localhost] [172.18.0.1] [Notice(8): A non well formed numeric value encountered] [FILE: /modules/register/theme.php] [LINE: 35] [TRACE:]
+#1  LINE: 364   FILE: /index.php
+#2  LINE: 13    FILE: /modules/register/funcs/main.php
+#3  LINE: 35    FILE: /modules/register/theme.php
+

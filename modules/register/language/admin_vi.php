@@ -399,3 +399,4 @@ $lang_module['history_author'] = 'Người tạo ra lịch sử';
 $lang_module['history_restore_confirm'] = 'Bạn có chắc chắn khôi phục lại phiên bản này không?';
 $lang_module['history_recovering'] = 'Hệ thống đang khôi phục tự động, bạn vui lòng đợi';
 $lang_module['history_restore_success'] = 'Khôi phục thành công';
+$lang_module['user_manage'] = 'Quản lý người dùng';
